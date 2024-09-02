@@ -1,0 +1,56 @@
+{
+  "data": {
+    "en": [
+      {
+        "title": "About Us",
+        "url": "/about-us"
+      },
+      {
+        "title": "News",
+        "url": "/news"
+      },
+      {
+        "title": "Ideas",
+        "url": "/ideas"
+      },
+      {
+        "title": "Product",
+        "url": "/product"
+      },
+      {
+        "title": "Services",
+        "url": "/services"
+      },
+      {
+        "title": "Contact Us",
+        "url": "/contact-us"
+      }
+    ],
+    "id": [
+      {
+        "title": "Tentang Kami",
+        "url": "/tentang-kami"
+      },
+      {
+        "title": "Berita",
+        "url": "/berita"
+      },
+      {
+        "title": "Ideas",
+        "url": "/ideas"
+      },
+      {
+        "title": "Produk",
+        "url": "/produk"
+      },
+      {
+        "title": "Layanan",
+        "url": "/layanan"
+      },
+      {
+        "title": "Kontak Kami",
+        "url": "/kontak-kami"
+      }
+    ]
+  }
+}

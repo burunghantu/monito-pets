@@ -1,0 +1,66 @@
+.btn {
+  @apply h-11 px-6 inline-flex justify-center items-center rounded-lg select-none text-white shadow-md;
+  /* color: ; */
+}
+
+.btn-primary {
+  @apply bg-primary hover:bg-primary-400 hover:text-white;
+}
+
+.btn-primary-outline {
+  @apply bg-transparent text-primary border border-primary;
+}
+
+.btn-primary-outline:hover {
+  @apply bg-primary-400 text-white;
+}
+
+.btn-secondary {
+  @apply bg-secondary hover:bg-secondary-400 ;
+}
+
+.btn-secondary-outline {
+  @apply bg-transparent text-secondary border border-secondary ;
+}
+
+.btn-secondary-outline:hover {
+  @apply bg-secondary-400 text-white;
+}
+
+.btn-slate {
+  @apply bg-slate-500 hover:bg-slate-400 hover:text-white;
+}
+
+.btn-slate-outline {
+  @apply bg-transparent text-slate-500 border border-slate-400;
+}
+
+.btn-slate-outline:hover {
+  @apply bg-slate-400 text-white;
+}
+
+// .btn .btn-icon {
+//   @apply mr-2 -ml-2;
+// }
+
+// .btn svg {
+//   @apply max-h-5;
+// }
+
+// .btn-primary .icon-fill,
+// .btn-secondary .icon-fill {
+//   @apply fill-white;
+// }
+
+// .btn-primary-outline .icon-fill {
+//   @apply fill-primary-400;
+// }
+
+// .btn-primary-outline:hover .icon-fill,
+// .btn-secondary-outline:hover .icon-fill {
+//   @apply fill-white;
+// }
+
+// .btn-secondary-outline .icon-fill {
+//   @apply fill-secondary-400;
+// }

@@ -1,0 +1,25 @@
+.table {
+  thead {
+    @apply text-white bg-slate-500;
+  }
+
+  th,
+  td {
+      @apply px-2 py-1 border border-slate-300;
+  }
+
+  td {
+    @apply align-top;
+  }
+
+  tbody {
+
+      tr:nth-child(even) {
+        @apply bg-slate-50;
+      }
+  }
+}
+
+.table-wrapper {
+  @apply overflow-scroll lg:overflow-visible;
+}
