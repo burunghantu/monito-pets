@@ -6,7 +6,7 @@ export default defineEventHandler(event => {
       author: 'John Doe',
       title: 'Cat Diet You Need to Know',
       slug: 'cat-diet-you-need-to-know',
-      thumbnail: '/assets/img/post-1.png',
+      thumbnail: '/post-1.png',
       category: 'Cats',
       descriptions:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
@@ -26,7 +26,7 @@ export default defineEventHandler(event => {
       author: 'Jane Smith',
       title: 'Dog Training Tips',
       slug: 'dog-training-tips',
-      thumbnail: '/assets/img/post-2.png',
+      thumbnail: '/post-2.png',
       category: 'Dogs',
       descriptions:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
@@ -44,13 +44,13 @@ export default defineEventHandler(event => {
       author: 'Alice Johnson',
       title: 'Pet Grooming Guide',
       slug: 'pet-grooming-guide',
-      thumbnail: '/assets/img/post-3.png',
+      thumbnail: '/post-3.png',
       category: 'Grooming',
       descriptions:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
       content: `
         <p>Grooming is more than just keeping your pet looking good—it's crucial for their overall health.</p>
-        <img src="assets/img/grooming-tools.jpg" alt="Grooming Tools" />
+        <img src="/grooming-tools.jpg" alt="Grooming Tools" />
         <p>Here are some grooming tips:</p>
         <ol>
           <li>Brush your pet regularly to prevent mats and tangles.</li>

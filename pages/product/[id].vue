@@ -9,7 +9,7 @@
           class="bg-pet-secondary-light mt-4 p-2 items-center flex gap-2 rounded-lg"
         >
           <NuxtImg
-            src="assets/img/bonus.svg"
+            src="/bonus.svg"
             alt="Bonus"
             width="20"
             height="20"
@@ -22,7 +22,7 @@
         </div>
         <div class="flex mt-6 flex-row gap-3 items-center">
           <NuxtImg
-            src="assets/img/share.svg"
+            src="/share.svg"
             alt="Share"
             width="16"
             height="16"

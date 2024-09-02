@@ -155,7 +155,6 @@ export default defineNuxtConfig({
   },
 
   image: {
-    dir: 'public/assets/img',
     domains: ['img.youtube.com','nuxt-monito-pets.vercel.app'],
     alias: {
       vercel: 'https://nuxt-monito-pets.vercel.app/',

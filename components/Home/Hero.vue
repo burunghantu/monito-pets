@@ -41,7 +41,7 @@
       </div>
 
       <NuxtImg
-        src="assets/img/woman-with-dog.png"
+        src="/woman-with-dog.png"
         alt="Pet Hero"
         height="450"
         width="350"

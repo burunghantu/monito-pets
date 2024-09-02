@@ -13,7 +13,7 @@
         </h2>
         <NuxtImg
           class="w-8 h-8 md:h-12 md:w-12"
-          src="assets/img/paw.svg"
+          src="/paw.svg"
           alt="paw"
           width="40"
           height="40"
@@ -40,7 +40,7 @@
     </div>
 
     <NuxtImg
-      src="assets/img/handhake-human-dog.png"
+      src="/handhake-human-dog.png"
       alt="Pet Hero"
       width="350"
       height="350"

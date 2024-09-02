@@ -33,14 +33,14 @@
 import { Pagination } from 'swiper/modules'
 
 const customers = [
-  '/assets/img/customer-1.png',
-  '/assets/img/customer-2.png',
-  '/assets/img/customer-3.png',
-  '/assets/img/customer-4.png',
-  '/assets/img/customer-5.png',
-  '/assets/img/customer-2.png',
-  '/assets/img/customer-3.png',
-  '/assets/img/customer-4.png',
+  '/customer-1.png',
+  '/customer-2.png',
+  '/customer-3.png',
+  '/customer-4.png',
+  '/customer-5.png',
+  '/customer-2.png',
+  '/customer-3.png',
+  '/customer-4.png',
 ]
 
 const updateBulletStyles = () => {

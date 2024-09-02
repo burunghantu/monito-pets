@@ -40,7 +40,7 @@
       class="bg-pet-secondary-light p-2 items-center flex gap-2 rounded-lg"
     >
       <NuxtImg
-        src="assets/img/bonus.svg"
+        src="/bonus.svg"
         alt="Bonus"
         width="20"
         height="20"

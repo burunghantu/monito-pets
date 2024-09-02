@@ -10,7 +10,7 @@
         >
           <div class="flex gap-2 items-center">
             <NuxtImg
-              src="assets/img/health.svg"
+              src="/health.svg"
               alt="100% healthy"
               width="30"
               height="30"
@@ -22,7 +22,7 @@
           </div>
           <div class="flex gap-2 items-center">
             <NuxtImg
-              src="assets/img/guarantee.svg"
+              src="/guarantee.svg"
               alt="100% healthy"
               width="30"
               height="30"
@@ -35,7 +35,7 @@
         </div>
         <div class="flex mt-6 flex-row gap-3 items-center">
           <NuxtImg
-            src="assets/img/share.svg"
+            src="/share.svg"
             alt="Share"
             width="16"
             height="16"

@@ -40,7 +40,7 @@
       <hr class="border border-slate-400 my-6" />
       <div class="md:flex items-center md:justify-between">
         <NuxtImg
-          src="assets/img/logo.svg"
+          src="/logo.svg"
           alt="Pet Logo"
           class="w-32 mx-auto mt-2 md:order-2"
         />

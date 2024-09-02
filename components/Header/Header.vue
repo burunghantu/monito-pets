@@ -6,7 +6,7 @@
     <div class="container">
       <NuxtLink class="site-logo" :to="localePath(`/`)">
         <NuxtImg
-          src="assets/img/site-logo.png"
+          src="/site-logo.png"
           alt="Monito Pets"
           width="48"
           height="48"

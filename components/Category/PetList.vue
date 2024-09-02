@@ -22,7 +22,7 @@
         <FormSelect v-model="sort" :options="options" />
         <button class="flex md:hidden gap-2 items-center" @click="toggleFilter">
           <NuxtImg
-            src="assets/img/filter.svg"
+            src="/filter.svg"
             alt="filter"
             width="16"
             height="16"
