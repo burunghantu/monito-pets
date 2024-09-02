@@ -50,7 +50,7 @@ export default defineEventHandler(event => {
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
       content: `
         <p>Grooming is more than just keeping your pet looking good—it's crucial for their overall health.</p>
-        <img src="/assets/img/grooming-tools.jpg" alt="Grooming Tools" />
+        <img src="assets/img/grooming-tools.jpg" alt="Grooming Tools" />
         <p>Here are some grooming tips:</p>
         <ol>
           <li>Brush your pet regularly to prevent mats and tangles.</li>

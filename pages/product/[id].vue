@@ -8,7 +8,7 @@
         <div
           class="bg-pet-secondary-light mt-4 p-2 items-center flex gap-2 rounded-lg"
         >
-          <nuxt-img
+          <NuxtImg
             src="assets/img/bonus.svg"
             alt="Bonus"
             width="20"

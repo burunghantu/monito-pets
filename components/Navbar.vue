@@ -13,9 +13,9 @@
         @click="toggleMobileMenu"
       />
       <NuxtLinkLocale class="order-2 md:order-1" to="/">
-        <nuxt-img
+        <NuxtImg
           class="md:h-[40px] h-[30px]"
-          src="/assets/img/logo.svg"
+          src="assets/img/logo.svg"
           alt="Pet Logo"
           height="40"
         />

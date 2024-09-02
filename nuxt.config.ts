@@ -155,13 +155,8 @@ export default defineNuxtConfig({
   },
 
   image: {
-    domains: isStaging
-      ? ['assets.suitdev.com', 'suitdev.com', 'img.youtube.com']
-      : ['suitmedia.static-assets.id'],
+    domains: ['img.youtube.com'],
     alias: {
-      suitmedia: isStaging
-        ? 'https://assets.suitdev.com'
-        : 'https://suitmedia.static-assets.id',
       youtube: 'https://img.youtube.com',
     },
     presets: {

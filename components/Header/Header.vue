@@ -5,9 +5,9 @@
   >
     <div class="container">
       <NuxtLink class="site-logo" :to="localePath(`/`)">
-        <nuxt-img
-          src="/assets/img/site-logo.png"
-          alt="Suitmedia"
+        <NuxtImg
+          src="assets/img/site-logo.png"
+          alt="Monito Pets"
           width="48"
           height="48"
           quality="100"

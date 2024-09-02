@@ -39,7 +39,7 @@
       v-if="props.data.bonus"
       class="bg-pet-secondary-light p-2 items-center flex gap-2 rounded-lg"
     >
-      <nuxt-img
+      <NuxtImg
         src="assets/img/bonus.svg"
         alt="Bonus"
         width="20"
