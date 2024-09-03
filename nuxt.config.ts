@@ -154,6 +154,41 @@ export default defineNuxtConfig({
     transpile: ['@vuepic/vue-datepicker'],
   },
 
+  // image: {
+  //   domains: ['img.youtube.com','nuxt-monito.vercel.app'],
+  //   alias: {
+  //     vercel: 'https://nuxt-monito.vercel.app/',
+  //     youtube: 'https://img.youtube.com',
+  //   },
+  //   presets: {
+  //     thumbnail: {
+  //       modifiers: {
+  //         format: 'webp',
+  //         width: 450,
+  //         height: 254,
+  //       },
+  //     },
+  //     client: {
+  //       modifiers: {
+  //         format: 'webp',
+  //         width: 204,
+  //         height: 204,
+  //       },
+  //     },
+  //     heroDetail: {
+  //       modifiers: {
+  //         format: 'webp',
+  //         width: 960,
+  //         height: 540,
+  //       },
+  //     },
+  //   },
+  //   provider: 'ipx',
+  //   ipx: {
+  //     maxAge: 60000,
+  //   },
+  // },
+
   snackbar: {
     top: true,
     right: true,

@@ -39,7 +39,7 @@
     </div>
 
     <NuxtImg
-      :src="`assets/img/${props.img}.png`"
+      :src="`${props.img}.png`"
       alt="Pet Hero"
       :width="props.width"
       :height="props.height"
