@@ -85,6 +85,10 @@ export default defineNuxtConfig({
     },
   },
 
+  icon: {
+    provider: 'server',
+  },
+
   css: [
     '~/assets/scss/main.scss',
     '~/assets/scss/modules/_modules.scss',
@@ -93,9 +97,7 @@ export default defineNuxtConfig({
     'vue-select/dist/vue-select.css',
   ],
 
-  plugins: [
-    { src: '~/plugins/vue-select.js' }
-  ],
+  plugins: [{ src: '~/plugins/vue-select.js' }],
 
   modules: [
     '@nuxtjs/tailwindcss',

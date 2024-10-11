@@ -5,7 +5,7 @@ export default defineEventHandler(event => {
   const pets = [
     {
       id: 1,
-      name: 'MO231 - Pomeranian White',
+      name: 'MO232 - Pomeranian White',
       gene: 'Male',
       thumbnail: '/pet-1.png',
       age: 2,
@@ -386,6 +386,8 @@ export default defineEventHandler(event => {
     : []
   const minPrice = query.minPrice ? Number(query.minPrice) : null
   const maxPrice = query.maxPrice ? Number(query.maxPrice) : null
+  const page = query.page ? Number(query.page) : 1
+  const pageSize = query.pageSize ? Number(query.pageSize) : 9
 
   let filteredPets = pets
 
@@ -411,7 +413,7 @@ export default defineEventHandler(event => {
       gene.map(g => g.toLowerCase()).includes(pet.gene.toLowerCase()),
     )
   }
-  
+
   if (color.length > 0) {
     filteredPets = filteredPets.filter(pet =>
       color.map(c => c.toLowerCase()).includes(pet.color.toLowerCase()),
@@ -439,5 +441,24 @@ export default defineEventHandler(event => {
     )
   }
 
-  return filteredPets
+  // Pagination
+  const totalItems = filteredPets.length
+  const totalPages = Math.ceil(totalItems / pageSize)
+  const startIndex = (page - 1) * pageSize
+  const endIndex = startIndex + pageSize
+  const paginatedPets = filteredPets.slice(startIndex, endIndex)
+
+  // Meta information
+  const meta = {
+    totalItems,
+    totalPages,
+    currentPage: page,
+    pageSize,
+  }
+
+  // return filteredPets
+  return {
+    data: paginatedPets,
+    meta,
+  }
 })
