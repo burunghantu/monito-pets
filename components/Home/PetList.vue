@@ -36,9 +36,7 @@ const props = defineProps({
 })
 
 const pets = ref([])
-const { data, refresh } = await useFetch(
-  `/api/get-pets?pageSize=${props.number}`,
-)
+const { data } = await useFetch(`/api/get-pets?pageSize=${props.number}`)
 pets.value = data.value?.data
 </script>
 
