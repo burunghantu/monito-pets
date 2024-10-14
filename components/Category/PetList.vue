@@ -43,7 +43,7 @@
     </div>
 
     <Pagination
-      v-if="meta?.totalPages > 1"
+      v-if="meta?.totalPages > 0"
       :total-pages="meta?.totalPages || 0"
       :current-page="meta?.currentPage || 10"
       :total-items="meta?.totalItems || 1"
