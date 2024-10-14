@@ -16,7 +16,7 @@
     >
       <div class="flex items-center gap-3">
         <h2 class="text-xl font-bold text-pet-primary">{{ title }}</h2>
-        <p class="text-slate-500 text-sm">{{ pets.length }} Pets</p>
+        <p class="text-slate-500 text-sm">{{ meta.totalItems }} Pets</p>
       </div>
       <div class="flex justify-between">
         <FormSelect v-model="sort" :options="options" />
@@ -138,10 +138,21 @@ const queries = {
 
 const pushQuery = () => {
   const page = queries.page.value
+  const { query } = route
+
+  const minPrice = query.minPrice
+  const maxPrice = query.maxPrice
+
+  const color = Array.isArray(query.color) ? [].concat(query.color) : null
+  const gene = Array.isArray(query.gene) ? [].concat(query.gene) : null
 
   router.push({
     query: {
       page,
+      gene,
+      color,
+      minPrice,
+      maxPrice,
     },
   })
 }
