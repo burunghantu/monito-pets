@@ -34,7 +34,10 @@ const props = defineProps({
     default: 8,
   },
 })
-const { data: pets } = await useFetch('/api/get-pets')
+
+const pets = ref([])
+const { data } = await useFetch(`/api/get-pets?pageSize=${props.number}`)
+pets.value = data.value?.data
 </script>
 
 <style></style>

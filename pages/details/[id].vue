@@ -34,12 +34,7 @@
           </div>
         </div>
         <div class="flex mt-6 flex-row gap-3 items-center">
-          <NuxtImg
-            src="/share.svg"
-            alt="Share"
-            width="16"
-            height="16"
-          />
+          <NuxtImg src="/share.svg" alt="Share" width="16" height="16" />
           <p class="font-semibold text-sm text-pet-primary">Share:</p>
           <LazySocialMedia class="text-md text-slate-400" />
         </div>

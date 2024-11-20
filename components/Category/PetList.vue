@@ -16,7 +16,7 @@
     >
       <div class="flex items-center gap-3">
         <h2 class="text-xl font-bold text-pet-primary">{{ title }}</h2>
-        <p class="text-slate-500 text-sm">{{ pets.length }} Pets</p>
+        <p class="text-slate-500 text-sm">{{ meta.totalItems }} Pets</p>
       </div>
       <div class="flex justify-between">
         <FormSelect v-model="sort" :options="options" />
@@ -41,6 +41,15 @@
     <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-6">
       <Card v-for="pet in pets" :key="pet.id" :data="pet" />
     </div>
+
+    <Pagination
+      v-if="meta?.totalPages > 0"
+      :total-pages="meta?.totalPages || 0"
+      :current-page="meta?.currentPage || 10"
+      :total-items="meta?.totalItems || 1"
+      :per-page="meta?.pageSize || 9"
+      @pagechanged="handlePageChange"
+    />
   </div>
 </template>
 
@@ -94,19 +103,70 @@ const apiUrl = computed(() => {
   if (route.query.sort) {
     query.push(`sort=${encodeURIComponent(route.query.sort)}`)
   }
+  if (route.query.page) {
+    query.push(`page=${encodeURIComponent(route.query.page)}`)
+  }
 
   return `${base}&${query.join('&')}`
 })
 
-const { data: pets, refresh } = await useFetch(apiUrl)
+const pets = ref({})
+const meta = ref({})
+
+const getArticles = async () => {
+  const { data, refresh } = await useFetch(apiUrl)
+  pets.value = data.value?.data
+  meta.value = data.value?.meta
+}
+
+await getArticles()
 
 watch([sort, slug], () => {
-  refresh()
+  getArticles()
 })
 
 const isFilterVisible = ref(false)
 
 const toggleFilter = () => {
   isFilterVisible.value = !isFilterVisible.value
+}
+
+const queries = {
+  page: ref(1),
+  search: ref(''),
+}
+
+const pushQuery = () => {
+  const page = queries.page.value
+  const { query } = route
+
+  const minPrice = query.minPrice
+  const maxPrice = query.maxPrice
+
+  const color = Array.isArray(query.color) ? [].concat(query.color) : null
+  const gene = Array.isArray(query.gene) ? [].concat(query.gene) : null
+
+  router.push({
+    query: {
+      page,
+      gene,
+      color,
+      minPrice,
+      maxPrice,
+    },
+  })
+}
+
+watch(
+  () => route.query,
+  () => {
+    getArticles()
+  },
+)
+
+const handlePageChange = newPage => {
+  queries.page.value = newPage
+
+  pushQuery()
 }
 </script>

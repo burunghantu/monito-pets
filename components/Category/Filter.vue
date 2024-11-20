@@ -6,11 +6,7 @@
     <div class="flex flex-col gap-3">
       <h2 class="text-black font-semibold">Gender</h2>
       <FormCheckBox v-model="filters.gender" label="Male" value="male" />
-      <FormCheckBox
-        v-model="filters.gender"
-        label="Female"
-        value="female"
-      />
+      <FormCheckBox v-model="filters.gender" label="Female" value="female" />
     </div>
     <hr class="border-t border-slate-200" />
     <div class="flex flex-col gap-3">
@@ -110,6 +106,7 @@ const applyFilters = () => {
   router.push({
     query: {
       ...router.currentRoute.value.query,
+      page: 1,
       gene: filters.value.gender.length ? filters.value.gender : null,
       color: filters.value.colors.length ? filters.value.colors : null,
       minPrice: filters.value.minPrice || null,
